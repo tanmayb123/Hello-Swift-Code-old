@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NumberGuessingGame_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="20" alignment="left" text="Guess Label" textAlignment="center" id="TMc-uJ-5CS"/>
+                        <label width="136" alignment="left" text="Status Label" textAlignment="center" id="W3X-uF-ePK"/>
+                        <button width="1" alignment="left" title="Increment (+)" id="bmm-C9-TkH">
+                            <connections>
+                                <action selector="increment" destination="AgC-eL-Hgc" id="EfY-C0-Kq0"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Decrement (-)" id="SSg-xw-yTx">
+                            <connections>
+                                <action selector="decrement" destination="AgC-eL-Hgc" id="qb6-bE-rcj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Make Guess" id="N1l-Xw-M57">
+                            <connections>
+                                <action selector="makeGuess" destination="AgC-eL-Hgc" id="Ckn-Er-eOH"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="guessLabel" destination="TMc-uJ-5CS" id="SLR-ql-QvD"/>
+                        <outlet property="statusLabel" destination="W3X-uF-ePK" id="0VW-8O-5Xc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="24.410256410256412" y="28.333333333333336"/>
+        </scene>
+    </scenes>
+</document>

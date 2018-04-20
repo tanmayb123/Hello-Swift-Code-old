@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D124FA1F9819ED001F987C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D124F91F9819ED001F987C /* AppDelegate.swift */; };
+		01D124FC1F9819ED001F987C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D124FB1F9819ED001F987C /* ViewController.swift */; };
+		01D124FF1F9819ED001F987C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D124FD1F9819ED001F987C /* Main.storyboard */; };
+		01D125011F9819ED001F987C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D125001F9819ED001F987C /* Assets.xcassets */; };
+		01D125041F9819ED001F987C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D125021F9819ED001F987C /* LaunchScreen.storyboard */; };
+		01D125091F9819ED001F987C /* NumberGuessingGame WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 01D125081F9819ED001F987C /* NumberGuessingGame WatchKit App.app */; };
+		01D1250F1F9819ED001F987C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D1250D1F9819ED001F987C /* Interface.storyboard */; };
+		01D125111F9819ED001F987C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D125101F9819ED001F987C /* Assets.xcassets */; };
+		01D125181F9819ED001F987C /* NumberGuessingGame WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 01D125171F9819ED001F987C /* NumberGuessingGame WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		01D1251D1F9819ED001F987C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D1251C1F9819ED001F987C /* InterfaceController.swift */; };
+		01D1251F1F9819ED001F987C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D1251E1F9819ED001F987C /* ExtensionDelegate.swift */; };
+		01D125211F9819ED001F987C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D125201F9819ED001F987C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01D1250A1F9819ED001F987C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D124EE1F9819EC001F987C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D125071F9819ED001F987C;
+			remoteInfo = "NumberGuessingGame WatchKit App";
+		};
+		01D125191F9819ED001F987C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D124EE1F9819EC001F987C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D125161F9819ED001F987C;
+			remoteInfo = "NumberGuessingGame WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01D125281F9819ED001F987C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				01D125181F9819ED001F987C /* NumberGuessingGame WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D1252C1F9819ED001F987C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				01D125091F9819ED001F987C /* NumberGuessingGame WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01D124F61F9819ED001F987C /* NumberGuessingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberGuessingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D124F91F9819ED001F987C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01D124FB1F9819ED001F987C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01D124FE1F9819ED001F987C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01D125001F9819ED001F987C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01D125031F9819ED001F987C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01D125051F9819ED001F987C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D125081F9819ED001F987C /* NumberGuessingGame WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NumberGuessingGame WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D1250E1F9819ED001F987C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		01D125101F9819ED001F987C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01D125121F9819ED001F987C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D125171F9819ED001F987C /* NumberGuessingGame WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NumberGuessingGame WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D1251C1F9819ED001F987C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		01D1251E1F9819ED001F987C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		01D125201F9819ED001F987C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01D125221F9819ED001F987C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01D124F31F9819ED001F987C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D125141F9819ED001F987C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D124ED1F9819EC001F987C = {
+			isa = PBXGroup;
+			children = (
+				01D124F81F9819ED001F987C /* NumberGuessingGame */,
+				01D1250C1F9819ED001F987C /* NumberGuessingGame WatchKit App */,
+				01D1251B1F9819ED001F987C /* NumberGuessingGame WatchKit Extension */,
+				01D124F71F9819ED001F987C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01D124F71F9819ED001F987C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01D124F61F9819ED001F987C /* NumberGuessingGame.app */,
+				01D125081F9819ED001F987C /* NumberGuessingGame WatchKit App.app */,
+				01D125171F9819ED001F987C /* NumberGuessingGame WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01D124F81F9819ED001F987C /* NumberGuessingGame */ = {
+			isa = PBXGroup;
+			children = (
+				01D124F91F9819ED001F987C /* AppDelegate.swift */,
+				01D124FB1F9819ED001F987C /* ViewController.swift */,
+				01D124FD1F9819ED001F987C /* Main.storyboard */,
+				01D125001F9819ED001F987C /* Assets.xcassets */,
+				01D125021F9819ED001F987C /* LaunchScreen.storyboard */,
+				01D125051F9819ED001F987C /* Info.plist */,
+			);
+			path = NumberGuessingGame;
+			sourceTree = "<group>";
+		};
+		01D1250C1F9819ED001F987C /* NumberGuessingGame WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				01D1250D1F9819ED001F987C /* Interface.storyboard */,
+				01D125101F9819ED001F987C /* Assets.xcassets */,
+				01D125121F9819ED001F987C /* Info.plist */,
+			);
+			path = "NumberGuessingGame WatchKit App";
+			sourceTree = "<group>";
+		};
+		01D1251B1F9819ED001F987C /* NumberGuessingGame WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				01D1251C1F9819ED001F987C /* InterfaceController.swift */,
+				01D1251E1F9819ED001F987C /* ExtensionDelegate.swift */,
+				01D125201F9819ED001F987C /* Assets.xcassets */,
+				01D125221F9819ED001F987C /* Info.plist */,
+			);
+			path = "NumberGuessingGame WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01D124F51F9819ED001F987C /* NumberGuessingGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D1252D1F9819ED001F987C /* Build configuration list for PBXNativeTarget "NumberGuessingGame" */;
+			buildPhases = (
+				01D124F21F9819ED001F987C /* Sources */,
+				01D124F31F9819ED001F987C /* Frameworks */,
+				01D124F41F9819ED001F987C /* Resources */,
+				01D1252C1F9819ED001F987C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01D1250B1F9819ED001F987C /* PBXTargetDependency */,
+			);
+			name = NumberGuessingGame;
+			productName = NumberGuessingGame;
+			productReference = 01D124F61F9819ED001F987C /* NumberGuessingGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01D125071F9819ED001F987C /* NumberGuessingGame WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D125291F9819ED001F987C /* Build configuration list for PBXNativeTarget "NumberGuessingGame WatchKit App" */;
+			buildPhases = (
+				01D125061F9819ED001F987C /* Resources */,
+				01D125281F9819ED001F987C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01D1251A1F9819ED001F987C /* PBXTargetDependency */,
+			);
+			name = "NumberGuessingGame WatchKit App";
+			productName = "NumberGuessingGame WatchKit App";
+			productReference = 01D125081F9819ED001F987C /* NumberGuessingGame WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		01D125161F9819ED001F987C /* NumberGuessingGame WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D125251F9819ED001F987C /* Build configuration list for PBXNativeTarget "NumberGuessingGame WatchKit Extension" */;
+			buildPhases = (
+				01D125131F9819ED001F987C /* Sources */,
+				01D125141F9819ED001F987C /* Frameworks */,
+				01D125151F9819ED001F987C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NumberGuessingGame WatchKit Extension";
+			productName = "NumberGuessingGame WatchKit Extension";
+			productReference = 01D125171F9819ED001F987C /* NumberGuessingGame WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01D124EE1F9819EC001F987C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Tanmay Bakshi";
+				TargetAttributes = {
+					01D124F51F9819ED001F987C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					01D125071F9819ED001F987C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					01D125161F9819ED001F987C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 01D124F11F9819EC001F987C /* Build configuration list for PBXProject "NumberGuessingGame" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01D124ED1F9819EC001F987C;
+			productRefGroup = 01D124F71F9819ED001F987C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01D124F51F9819ED001F987C /* NumberGuessingGame */,
+				01D125071F9819ED001F987C /* NumberGuessingGame WatchKit App */,
+				01D125161F9819ED001F987C /* NumberGuessingGame WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01D124F41F9819ED001F987C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D125041F9819ED001F987C /* LaunchScreen.storyboard in Resources */,
+				01D125011F9819ED001F987C /* Assets.xcassets in Resources */,
+				01D124FF1F9819ED001F987C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D125061F9819ED001F987C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D125111F9819ED001F987C /* Assets.xcassets in Resources */,
+				01D1250F1F9819ED001F987C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D125151F9819ED001F987C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D125211F9819ED001F987C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01D124F21F9819ED001F987C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D124FC1F9819ED001F987C /* ViewController.swift in Sources */,
+				01D124FA1F9819ED001F987C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D125131F9819ED001F987C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D1251F1F9819ED001F987C /* ExtensionDelegate.swift in Sources */,
+				01D1251D1F9819ED001F987C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01D1250B1F9819ED001F987C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D125071F9819ED001F987C /* NumberGuessingGame WatchKit App */;
+			targetProxy = 01D1250A1F9819ED001F987C /* PBXContainerItemProxy */;
+		};
+		01D1251A1F9819ED001F987C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D125161F9819ED001F987C /* NumberGuessingGame WatchKit Extension */;
+			targetProxy = 01D125191F9819ED001F987C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01D124FD1F9819ED001F987C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D124FE1F9819ED001F987C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01D125021F9819ED001F987C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D125031F9819ED001F987C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		01D1250D1F9819ED001F987C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D1250E1F9819ED001F987C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01D125231F9819ED001F987C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01D125241F9819ED001F987C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01D125261F9819ED001F987C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 998XWVFVMR;
+				INFOPLIST_FILE = "NumberGuessingGame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TBSS.NumberGuessingGame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		01D125271F9819ED001F987C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 998XWVFVMR;
+				INFOPLIST_FILE = "NumberGuessingGame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TBSS.NumberGuessingGame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		01D1252A1F9819ED001F987C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 998XWVFVMR;
+				IBSC_MODULE = NumberGuessingGame_WatchKit_Extension;
+				INFOPLIST_FILE = "NumberGuessingGame WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = TBSS.NumberGuessingGame.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		01D1252B1F9819ED001F987C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 998XWVFVMR;
+				IBSC_MODULE = NumberGuessingGame_WatchKit_Extension;
+				INFOPLIST_FILE = "NumberGuessingGame WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = TBSS.NumberGuessingGame.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		01D1252E1F9819ED001F987C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 998XWVFVMR;
+				INFOPLIST_FILE = NumberGuessingGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TBSS.NumberGuessingGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01D1252F1F9819ED001F987C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 998XWVFVMR;
+				INFOPLIST_FILE = NumberGuessingGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TBSS.NumberGuessingGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01D124F11F9819EC001F987C /* Build configuration list for PBXProject "NumberGuessingGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D125231F9819ED001F987C /* Debug */,
+				01D125241F9819ED001F987C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D125251F9819ED001F987C /* Build configuration list for PBXNativeTarget "NumberGuessingGame WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D125261F9819ED001F987C /* Debug */,
+				01D125271F9819ED001F987C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D125291F9819ED001F987C /* Build configuration list for PBXNativeTarget "NumberGuessingGame WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D1252A1F9819ED001F987C /* Debug */,
+				01D1252B1F9819ED001F987C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D1252D1F9819ED001F987C /* Build configuration list for PBXNativeTarget "NumberGuessingGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D1252E1F9819ED001F987C /* Debug */,
+				01D1252F1F9819ED001F987C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01D124EE1F9819EC001F987C /* Project object */;
+}
